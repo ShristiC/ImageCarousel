@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interviews.MainPage">
+
+    <VerticalStackLayout Spacing="{StaticResource AppSpacing}" Padding="{StaticResource Padding}">
+        <Label
+            Text="Welcome to Shristi's Image Carousel!" 
+            Style="{StaticResource Headline}"/>
+
+            <CarouselView 
+                    EmptyView="There are No Images to Display"
+                    ItemsSource="{Binding Images}" 
+                    IndicatorView="indicatorView"
+                    Style="{StaticResource MyCarouselView}"
+                    CurrentItem="{Binding CurrentItem}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame
+                            Style="{StaticResource CarouselFrame}">
+                            <StackLayout Spacing="{StaticResource ComponentSpacing}">
+                                <Label Text="{Binding Name}"
+                                    FontAttributes="Bold"
+                                    Style="{StaticResource Level2}"/>
+                                <Image Source="{Binding ImageUrl}"
+                                    Style="{StaticResource CarouselImage}"
+                                    SemanticProperties.Description="{Binding ImageDescription}"/>
+                                <Label Text="{Binding Details}"
+                                    Style="{StaticResource Level4}"
+                                    MaxLines="2" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        
+        <IndicatorView x:Name="indicatorView"/>
+        <Label Text="{Binding TotalCount,
+                        Path=Value,
+                        StringFormat='We have a gallery of {0} Images. Swipe to immerse yourself :D'}" 
+            Style="{StaticResource SubHeadline}"/>
+        <HorizontalStackLayout HorizontalOptions="{StaticResource PrimaryOrientation}" Spacing="{StaticResource ComponentSpacing}">
+            <Button
+                Style="{StaticResource AddRemoveButton}"
+                Text="Add"
+                BackgroundColor="{StaticResource Violet}"
+                Clicked="AddImage"/>
+            <Button
+                Style="{StaticResource AddRemoveButton}"
+                Text="Remove"
+                BackgroundColor="Purple"
+                Clicked="RemoveLastImage"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interviews</name>
+    </assembly>
+    <members>
+        <member name="P:Interviews.MainPage.Images">
+            <summary>
+            Collection of ImageCarousel objects containing images and descriptions for each images
+            </summary>
+        </member>
+        <member name="P:Interviews.MainPage.TotalCount">
+            <summary>
+            Number of Items in the ImageCarousel
+            </summary>
+        </member>
+        <member name="P:Interviews.MainPage.CurrentItem">
+            <summary>
+            Pointer 
+            </summary>
+        </member>
+        <member name="M:Interviews.MainPage.AddImage(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for adding an experience to the image carousel
+            </summary>
+            <param name="sender"> Request Control of the event</param>
+            <param name="e"> optional arguments passed in </param>
+        </member>
+        <member name="M:Interviews.MainPage.RemoveLastImage(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for removing the last experience rom the image carousel
+            </summary>
+            <param name="sender"> Request Control of the event</param>
+            <param name="e"> optional arguments passed in </param>
+        </member>
+        <member name="P:Interviews.ImageCarousel.Name">
+            <summary>
+            Name or Title of the image to be placed in the card
+            </summary>
+        </member>
+        <member name="P:Interviews.ImageCarousel.Details">
+            <summary>
+            Caption, Description, and Additional Details of the image
+            </summary>
+        </member>
+        <member name="P:Interviews.ImageCarousel.ImageUrl">
+            <summary>
+            Path by which to find and load the image from
+            </summary>
+        </member>
+    </members>
+</doc>
