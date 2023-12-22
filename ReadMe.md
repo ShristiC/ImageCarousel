@@ -2,7 +2,7 @@
 
 **Author**: Shristi Chitlangia
 
-**Purpose**: Cephable Technical Interview 
+**Purpose**: Learn to create an Image Carousel Using .NET Maui
 
 **Date:** December 2023
 
