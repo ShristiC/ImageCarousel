@@ -18,9 +18,9 @@
 
 ## Key Features of the App
 
-1. A simple image carousel with a mock title, image, and description that is placed inside of a card
+1. A simple image carousel with a mock title, image, and description that is placed inside of a card. Each image also has an alt text associated with it.
 
-2. The ability to Statically Add or Remove more cards to the carousel (locally hosted and installed)
+2. Data is pulled in from a csv file of images that contain a URL, title, description, and an alt-text (inspired by the Kaggle Web Harvest Image and Caption dataset: https://www.kaggle.com/datasets/thedevastator/web-harvested-image-and-caption-dataset )
 
 3. Swipe and Immerse yourself in the carousel
 
@@ -38,7 +38,7 @@
 
 ## Future Iterations
 
-1. Allow for an upload of an image through phone's photo gallery or by taking a picture through camera
+1. Allow for an upload of an image through phone's photo gallery or by taking a picture through camera - decided that this is not standard to a typical image carousel feature
 
 2. Dark and Light Mode Color Themes
 

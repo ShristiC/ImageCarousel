@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Interviews.MainPage">
 
     <VerticalStackLayout Spacing="{StaticResource AppSpacing}" Padding="{StaticResource Padding}">
         <Label
-            Text="Welcome to Shristi's Image Carousel!" 
+            Text="Welcome to the Human Experience!" 
             Style="{StaticResource Headline}"/>
 
             <CarouselView 
@@ -20,13 +21,13 @@
                         <Frame
                             Style="{StaticResource CarouselFrame}">
                             <StackLayout Spacing="{StaticResource ComponentSpacing}">
-                                <Label Text="{Binding Name}"
+                                <Label Text="{Binding Title}"
                                     FontAttributes="Bold"
                                     Style="{StaticResource Level2}"/>
                                 <Image Source="{Binding ImageUrl}"
                                     Style="{StaticResource CarouselImage}"
-                                    SemanticProperties.Description="{Binding ImageDescription}"/>
-                                <Label Text="{Binding Details}"
+                                    SemanticProperties.Description="{Binding AltText}"/>
+                                <Label Text="{Binding Description}"
                                     Style="{StaticResource Level4}"
                                     MaxLines="2" />
                             </StackLayout>
@@ -43,15 +44,15 @@
             Style="{StaticResource SubHeadline}"/>
         <HorizontalStackLayout HorizontalOptions="{StaticResource PrimaryOrientation}" Spacing="{StaticResource ComponentSpacing}">
             <Button
-                Style="{StaticResource AddRemoveButton}"
-                Text="Add"
+                Style="{StaticResource ImgCarouselBtn}"
+                Text="Previous"
                 BackgroundColor="{StaticResource Violet}"
-                Clicked="AddImage"/>
+                Clicked="OnGoToPreviousImage"/>
             <Button
-                Style="{StaticResource AddRemoveButton}"
-                Text="Remove"
+                Style="{StaticResource ImgCarouselBtn}"
+                Text="Next"
                 BackgroundColor="Purple"
-                Clicked="RemoveLastImage"/>
+                Clicked="OnGoToNextImage"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

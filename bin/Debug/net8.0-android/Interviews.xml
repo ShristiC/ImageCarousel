@@ -19,6 +19,11 @@
             Pointer 
             </summary>
         </member>
+        <member name="M:Interviews.MainPage.PopulateImages">
+            <summary>
+            Populating images from a csv data file
+            </summary>
+        </member>
         <member name="M:Interviews.MainPage.AddImage(System.Object,System.EventArgs)">
             <summary>
             Event handler for adding an experience to the image carousel
@@ -33,20 +38,31 @@
             <param name="sender"> Request Control of the event</param>
             <param name="e"> optional arguments passed in </param>
         </member>
-        <member name="P:Interviews.ImageCarousel.Name">
-            <summary>
-            Name or Title of the image to be placed in the card
-            </summary>
-        </member>
-        <member name="P:Interviews.ImageCarousel.Details">
-            <summary>
-            Caption, Description, and Additional Details of the image
-            </summary>
-        </member>
         <member name="P:Interviews.ImageCarousel.ImageUrl">
             <summary>
             Path by which to find and load the image from
             </summary>
+        </member>
+        <member name="P:Interviews.ImageCarousel.Title">
+            <summary>
+            Name or Title of the image to be placed in the card
+            </summary>
+        </member>
+        <member name="P:Interviews.ImageCarousel.Description">
+            <summary>
+            Caption, Description, and Additional Details of the image
+            </summary>
+        </member>
+        <member name="P:Interviews.ImageCarousel.AltText">
+            <summary>
+            Alt text of the image
+            </summary>
+        </member>
+        <member name="M:Interviews.ImageCarousel.#ctor(System.String[])">
+            <summary>
+            Creating a set Image Carousel given an array of image data
+            </summary>
+            <param name="arr"></param>
         </member>
     </members>
 </doc>

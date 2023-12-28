@@ -311,3 +311,4 @@
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-ios/iossimulator-arm64/Interviews.genruntimeconfig.cache
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-ios/iossimulator-arm64/ref/Interviews.dll
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-ios/iossimulator-arm64/resizetizer/r/Resources/man_playing_instrument_with_child.jpg
+/Users/shris/CSProjects/Interviews/obj/Debug/net8.0-ios/iossimulator-arm64/Interviews.sourcelink.json

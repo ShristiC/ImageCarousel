@@ -1036,4 +1036,5 @@
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-android/resizetizer/r/drawable/man_playing_instrument_with_child.jpg
+/Users/shris/CSProjects/Interviews/obj/Debug/net8.0-android/Interviews.sourcelink.json
 /Users/shris/CSProjects/Interviews/obj/Debug/net8.0-android/android/assets/System.Private.CoreLib.dll
